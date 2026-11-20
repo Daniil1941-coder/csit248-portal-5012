@@ -20,7 +20,7 @@ if (form) {
   // Count name characters
   name.addEventListener("keyup", function () {
     let left = MAX_NAME - name.value.length;
-    nameCounter.textContent = left + " characters left out of 25";
+    nameCounter.textContent = left + " characters left out of " + MAX_NAME;
   });
 
   // Show selected city
@@ -86,7 +86,7 @@ if (form) {
     if (password.value === "") {
       errors.push("Password is required.");
     } else if (password.value.length < MIN_PASSWORD) {
-      errors.push("Password must be at least 8 characters.");
+      errors.push("Password must be at least " + MIN_PASSWORD + " characters.");
     }
 
     if (confirmPassword.value === "") {
