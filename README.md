@@ -26,3 +26,7 @@
 
 - VS Code: right-click `index.html` → **Open with Live Server**, or
 - terminal: `python -m http.server` in this folder, then open http://localhost:8000
+
+## Reflection
+
+The bug that cost me the most time was the Register button reloading the page instead of showing my errors, because my submit handler in app.js never ran. I found it with the browser console open: no message from my handler appeared, and once I attached the listener to the `<form id="registerForm">` (not the button), kept `defer` on the script tag and called `event.preventDefault()` first, validation worked. With another hour I would show each error next to its own field and remove the red `.invalid` border while the user types, not only on blur.
