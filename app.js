@@ -228,7 +228,9 @@ if (table) {
       marksCell.textContent = list[i].marks;
 
       let gradeCell = document.createElement("td");
-      gradeCell.textContent = grade(list[i].marks);
+      let result = grade(list[i].marks);
+      gradeCell.textContent = result;
+      gradeCell.classList.add("grade-" + result.toLowerCase());
 
       row.appendChild(nameCell);
       row.appendChild(cityCell);
