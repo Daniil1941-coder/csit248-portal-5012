@@ -15,3 +15,14 @@
 | K | my own marks | (5 + 0 + 1 + 2) × 4 = 32 (max 100) | **32** |
 | T | pass mark | 40 + D4 = 40 + 2 | **42** |
 | C | accent colour | named CSS colour starting with "P" (Pinegin) | **purple** |
+
+## Repository
+
+- **Repo name:** csit248-portal-5012
+
+## How to run
+
+`fetch()` does not work from a `file://` page, so open the site over HTTP:
+
+- VS Code: right-click `index.html` → **Open with Live Server**, or
+- terminal: `python -m http.server` in this folder, then open http://localhost:8000
